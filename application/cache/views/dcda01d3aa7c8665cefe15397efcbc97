@@ -1,0 +1,8 @@
+<div id="container">
+	<h1><?php echo e($page_title); ?></h1>
+
+	<div id="body">
+		<p><?php echo e($page_content); ?></p>
+	</div>
+
+</div>

@@ -1,0 +1,18 @@
+<section>
+	<div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <p>Frases Cadastradas: <?php echo e($nfrases); ?> </p>
+              <p>Versos Cadastrados: <?php echo e($nversos); ?></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <p>Visitas</p>
+              <p>Compartilhamentos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
