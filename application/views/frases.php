@@ -63,21 +63,21 @@
 					<h3 class="modal-title smaller lighter blue no-margin">Frases</h3>
 				</div>
 				<!--<form id="form" class="form-horizontal"  action="#" method="post" accept-charset="utf-8">	-->
-				<form id="form" uri="<?=site_url()?>">
-			<div class="modal-body">
-				<input type="hidden" name="idd" id="idd"/>
-				<label>Frase</label>
-				<input type="text" name="frase" class="form-control" placeholder="Frase">
-				<label>Autor</label>
-				<input type="text" name="autor" class="form-control" placeholder="Autor">
-				<label>Tag</label>
-				<input type="text" name="tag" class="form-control" placeholder="Tag">
-			</div>
-			<div class="modal-footer">
-				  <button class="btn" data-dismiss="modal" aria-hidden="true" id="btn-cancelar-edit">Cancelar</button>
-				  <button class="btn btn-success btn-submit">Submit</button>
-			</div>
-			</form>
+				<form id="form">
+					<div class="modal-body">
+						<input type="hidden" name="idd" id="idd"/>
+						<label>Frase</label>
+						<input type="text" name="frase" class="form-control" placeholder="Frase">
+						<label>Autor</label>
+						<input type="text" name="autor" class="form-control" placeholder="Autor">
+						<label>Tag</label>
+						<input type="text" name="tag" class="form-control" placeholder="Tag">
+					</div>
+					<div class="modal-footer">
+						  <button class="btn" data-dismiss="modal" aria-hidden="true" id="btn-cancelar-edit">Cancelar</button>
+						  <button class="btn btn-success btn-submit">Salvar</button>
+					</div>
+				</form>
 			<div class="alert alert-danger print-error-msg" style="display:none"></div>
 		</div>
 	</div>

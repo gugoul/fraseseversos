@@ -34,9 +34,22 @@ class Sistema_model extends CI_Model {
 		$cont = $this->contador('id_fr','frases');
 		$this->gerador($cont->a);
 		
-		$this->db->select('frases_fr,autor_fr');
+		$this->db->select('frases_fr as a,autor_fr as b');
 		$this->db->from('frases');
         $this->db->where('id_fr',$_SESSION['fr']);
+        $this->db->limit(1);
+        //return $this->db->get('produtos')->row();
+        return $this->db->get()->row();
+	}
+	
+	public function listar_verso()
+	{	
+		$cont = $this->contador('id_vr','versos');
+		$vr = rand(1,$cont->a);
+		
+		$this->db->select('versos_vr as a,autor_vr as b');
+		$this->db->from('versos');
+        $this->db->where('id_vr',$vr);
         $this->db->limit(1);
         //return $this->db->get('produtos')->row();
         return $this->db->get()->row();

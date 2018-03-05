@@ -62,7 +62,7 @@
 			<div class="modal-body">
 				<input type="hidden" name="idd" id="idd"/>
 				<label>Versos</label>
-				<input type="text" name="verso" class="form-control" placeholder="Escreva ser verso">
+				<textarea name="verso" class="form-control" placeholder="Escreva ser verso"></textarea>
 				<label>Autor</label>
 				<input type="text" name="autor" class="form-control" placeholder="Autor">
 				<label>Tag</label>
@@ -70,7 +70,7 @@
 			</div>
 			<div class="modal-footer">
 				  <button class="btn" data-dismiss="modal" aria-hidden="true" id="btn-cancelar-edit">Cancelar</button>
-				  <button class="btn btn-success btn-submit">Submit</button>
+				  <button class="btn btn-success btn-submit">Salvar</button>
 			</div>
 			</form>
 			<div class="alert alert-danger print-error-msg" style="display:none"></div>
